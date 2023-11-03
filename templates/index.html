@@ -2,7 +2,7 @@
 {% extends 'base2.html' %}
 {% block title %} Library System {% endblock %}
 {% block headmessage %} 
-    <h3 style='font-family:微軟正黑體;'>文章列表</a>
+    <h3 style='font-family:微軟正黑體;'>書籍總覽</a>
 {% endblock %}
 {% block content %} 
 {% for post in posts %}
@@ -10,7 +10,7 @@
     <div class='card-header' style='background-color:#ffffff'>
         <p style='font-family:微軟正黑體;font-size:14pt;font-weight:bold;'>
             <a href='/post/{{post.slug}}' style="font-size:20px;">{{ post.title }}</a>
-            <a style="font-size:10px;"> {{ post.author }}<a>
+            <a style="font-size:14px;"> {{ post.author }}<a>
         </p>
     </div>
     <div class='card-body' style='background-color:#e3be81' style="font-size:15px;">
