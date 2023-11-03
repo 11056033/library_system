@@ -6,10 +6,10 @@
     <h3 style='font-family:微軟正黑體; '>{{ post.title }}</h3>
     <a style="font-size:14px;"> {{ post.author }}<a>
         <div></div>
-    <a style='font-family:微軟正黑體;' href='/'>回首頁</a>
+    <a style='font-family:微軟正黑體 ;' href='/'>回首頁</a>
 {% endblock %}
 {% block content %} 
-    <p style='font-family:微軟正黑體;font-size:12pt;letter-spacing:2pt;'>
+    <p style='font-family:微軟正黑體;font-size:18pt;letter-spacing:2pt;'>
         {{ post.body | convert_markdown | safe }}</a>
     </p>
 {% endblock %}
