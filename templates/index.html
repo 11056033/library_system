@@ -12,11 +12,10 @@
             <a href='/post/{{post.slug}}' style="font-size:20px;">{{ post.title }}</a>
             <a style="font-size:14px;"> {{ post.author }}<a>
         </p>
+        
     </div>
     <div class='card-body' style='background-color:#e3be81' style="font-size:15px;">
-        <p>
-        {{ post.body | truncatechars:40 }}
-        </p>
+        <b style="font-size:14px;"> {{ post.introduce }}<b></b>
     </div>
     <div class='card-footer'  style='background-color:#d1922e'>
         <p style="font-size:10px;">
