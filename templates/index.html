@@ -1,25 +1,26 @@
 <!-- index.html -->
 {% extends 'base2.html' %}
-{% block title %} hi hi {% endblock %}
+{% block title %} Library System {% endblock %}
 {% block headmessage %} 
     <h3 style='font-family:微軟正黑體;'>文章列表</a>
 {% endblock %}
 {% block content %} 
 {% for post in posts %}
 <div class='card' style='background-color:#821b0d'>
-    <div class='card-header' style='background-color:#0095ff'>
+    <div class='card-header' style='background-color:#ffffff'>
         <p style='font-family:微軟正黑體;font-size:14pt;font-weight:bold;'>
-            <a href='/post/{{post.slug}}'>{{ post.title }}</a>
+            <a href='/post/{{post.slug}}' style="font-size:20px;">{{ post.title }}</a>
+            <a style="font-size:10px;"> {{ post.author }}<a>
         </p>
     </div>
-    <div class='card-body' style='background-color:#b15518'>
+    <div class='card-body' style='background-color:#e3be81' style="font-size:15px;">
         <p>
         {{ post.body | truncatechars:40 }}
         </p>
     </div>
-    <div class='card-footer'  style='background-color:#6e6810'>
-        <p>
-            發佈時間：{{ post.pub_date | date:"Y M d, h:m:s A"}}
+    <div class='card-footer'  style='background-color:#d1922e'>
+        <p style="font-size:10px;">
+            上架時間：{{ post.pub_date | date:"Y M d, h:m:s A"}}
         </p>
     </div>
 </div>

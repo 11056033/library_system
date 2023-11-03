@@ -7,34 +7,34 @@
     </title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 </head>
-<body style='background-color:#29180c'>
-    <div class="container-fluid">
+<body style='background: color #c29c6b;'>
+    <div class="container-fluid" style='background-color:#ba7a36'>
         {% include 'header.html' %}
         <div class="row">
             <div class="col-sm-3 col-md-3">
-                <div class="card">
-                    <div class="card-header" style='background-color:#0e726f'>
-                        <h3>Menu</h3>
+                <div class="card" style='background-color:rgb(252, 215, 30)'>
+                    <div class="card-header" style='background-color:#e3be8e'>
+                        <h3>書籍總覽</h3>
                     </div>
-                    <div class="card-body" style='background-color:#0084ff'>
+                    <div class="card-body" style='background-color:#d1922e'>
                         <div class='list-group' style='background-color:#820e8d'>
-                            <a href='/' class='list-group-item'>HOME</a>
-                            <a href='https://google.com/news' class='list-group-item'>即時新聞</a>
-                            <a href='https://youtube.com/' class='list-group-item'>YouTube</a>
+                            <a href='/' class='list-group-item' style='background-color:#bd794b'>主頁</a>
+                            <a href='http://127.0.0.1:8000/post/book_orange/' class='list-group-item' style='background-color:#bd794b'>發條橘子</a>
+                            <a href='http://127.0.0.1:8000/post/Book_MyEF/' class='list-group-item' style='background-color:#bd794b'>你不可不知的10大英文俚語</a>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col-sm-9 col-md-9">
                 <div class="card">
-                    <div class="card-header">
+                    <div class="card-header" style='background-color:#8fa030'>
                         {% block headmessage %} 
                         {% endblock %}
                     </div>
-                    <div class="card-body" style='background-color:#5e3113'>
+                    <div class="card-body" style='background-color:#9ee0f7'>
                         {% block content %} {% endblock %}
                     </div>
-                    <div class="card-footer" style='background-color:#861617'>
+                    <div class="card-footer" style='background-color:#e3be8e'>
                         {% include 'footer.html' %}
                     </div>
                 </div>
