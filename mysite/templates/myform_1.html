@@ -1,0 +1,35 @@
+{% extends "base2.html" %}
+{% block title %} 表單輸入 {% endblock title %}
+{% block headmessage %} 
+<a style='font-family:微軟正黑體;' href='/'>回首頁</a>
+{% endblock headmessage %} 
+
+{% block content %}
+<h2>HTML Forms</h2>
+<form action="" method="post">
+    {% csrf_token %}
+  <label for="title">標題:</label><br>
+  <input type="text" id="title" name="title"><br>
+  
+  <label for="title">類別:</label><br>
+  <input type="checkbox" id="tech" name="category" value="科技"></input>
+  <label for="tech">科技</label>
+  <input type="checkbox" id="mood" name="category" value="心情"></input>
+  <label for="mood">心情</label>
+  <input type="checkbox" id="life" name="category" value="生活"></input>
+  <label for="life">生活</label>
+  <input type="checkbox" id="edu" name="category" value="教育"></input>
+  <label for="edu">教育</label>
+  <input type="checkbox" id="other" name="category" value="其他"></input>
+  <label for="other">其他</label>
+  <br>
+  <label for="slug">slug:</label><br>
+  <input type="text" id="slug" name="slug"><br>
+  <label for="content">內文:</label><br>
+  <textarea id='content' name='content' cols='30'>
+  </textarea>
+  <br>
+  <input type="submit" value="送出">
+</form> 
+
+{% endblock content %}
