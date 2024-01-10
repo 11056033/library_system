@@ -25,6 +25,7 @@ class Profile(models.Model):
     website = models.URLField(null=True)
 	
     def __str__(self):
+<<<<<<< HEAD
         return self.user.username
 
 from django.db import models
@@ -46,3 +47,6 @@ class Book(models.Model):
     def __str__(self):
         return self.title
 
+=======
+        return self.user.username
+>>>>>>> 52dc63926e3d530c1935c6de81502acb12148a0f

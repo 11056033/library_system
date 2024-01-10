@@ -46,8 +46,12 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'mysite',
+<<<<<<< HEAD
     'mytest',
     'library_search',
+=======
+    'mytest'
+>>>>>>> 52dc63926e3d530c1935c6de81502acb12148a0f
 ]
 
 MIDDLEWARE = [

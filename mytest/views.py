@@ -1,10 +1,15 @@
+<<<<<<< HEAD
 from django.db import connection
 from django.shortcuts import render, get_object_or_404, redirect
+=======
+from django.shortcuts import render, redirect, get_object_or_404
+>>>>>>> 52dc63926e3d530c1935c6de81502acb12148a0f
 from django.contrib.auth.models import User
 from django.contrib.auth import logout, authenticate, login
 from django.contrib import auth
 from django.contrib.auth.decorators import login_required
 from django.http import HttpResponseForbidden
+<<<<<<< HEAD
 from .models import Post, Mood, Profile, Book  
 from .forms import ContactForm, PostForm, UserRegisterForm, LoginForm, ProfileForm
 from django.db.models import Q
@@ -12,6 +17,10 @@ from django.shortcuts import redirect
 from django.views.generic import View
 from django.views.generic import ListView
 
+=======
+from .models import Post, Mood, Profile
+from .forms import ContactForm, PostForm, UserRegisterForm, LoginForm, ProfileForm
+>>>>>>> 52dc63926e3d530c1935c6de81502acb12148a0f
 
 # Create your views here.
 def index(request):
@@ -102,7 +111,11 @@ from django.contrib.auth import authenticate
 from django.contrib import auth
 from django.contrib.auth.decorators import login_required
 
+<<<<<<< HEAD
 def login_view(request):
+=======
+def login(request):
+>>>>>>> 52dc63926e3d530c1935c6de81502acb12148a0f
     if request.method == 'GET':
         form = LoginForm()
         return render(request, 'login.html', locals())
@@ -200,6 +213,7 @@ def delete_post(request, post_id):
         post.delete()
         return redirect('user_posts')
     else:
+<<<<<<< HEAD
         return HttpResponseForbidden("You don't have permission to delete this post.")
 
 from django.views.generic import ListView
@@ -221,3 +235,6 @@ from django.shortcuts import render, redirect
 from django.views import View
 from django.views.generic import ListView
 
+=======
+        return HttpResponseForbidden("You don't have permission to delete this post.")
+>>>>>>> 52dc63926e3d530c1935c6de81502acb12148a0f

@@ -47,6 +47,10 @@ class ProfileForm(forms.ModelForm):
         super(ProfileForm, self).__init__(*args, **kwargs)
         self.fields['height'].label = '身高'
         self.fields['male'].label = '性別'
+<<<<<<< HEAD
         self.fields['website'].label = '個人網址'
 
 
+=======
+        self.fields['website'].label = '個人網址'
+>>>>>>> 52dc63926e3d530c1935c6de81502acb12148a0f
