@@ -1,0 +1,23 @@
+<!-- book_list.html -->
+{% extends 'base2.html' %}
+{% block title %} Library System - Book List {% endblock %}
+{% block headmessage %} 
+    <h3 style='font-family:微軟正黑體;'>書籍總覽</a>
+{% endblock %}
+{% block content %} 
+    <form method="get">
+        <input type="text" name="q" placeholder="搜尋...">
+        <input type="submit" value="搜尋">
+    </form>
+    {% for book in object_list %}
+        <div class='card'>
+            <div class='card-header'>
+                <p>{{ book.title }}</p>
+            </div>
+            <div class='card-body'>
+                {{ book.body }}
+            </div>
+        </div>
+        <br>
+    {% endfor %}
+{% endblock %}
